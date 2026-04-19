@@ -4,6 +4,7 @@ GREEN="\033[1;32m"
 YELLOW="\033[1;33m"
 NC="\033[0m"
 
+FORCE_JSON=1
 NON_OFFICIAL_TAG="HOMEMADE"
 
 findPayloadOffset() {
@@ -46,7 +47,6 @@ if ! [ -f "$file_path" ]; then
     fi
 fi
 
-# only generate for official builds. unless forced with 'export FORCE_JSON=1'
 isOfficial=1
 if [[ $FORCE_JSON == 1 ]]; then
     echo -e "${GREEN}Forced generation of json${NC}"
