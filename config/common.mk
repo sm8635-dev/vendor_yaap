@@ -104,6 +104,7 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/yaap/overlay/frameworks
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/yaap/overlay/frameworks
 PRODUCT_PACKAGES += \
     DeviceConfigOverlay \
+    DocumentsUIOverlay \
     CertifiedPropsOverlay \
     FrameworksOverlay \
     PermissionControllerOverlay \
